@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>問い合わせフォーム</title>
+    <!-- normalize.cssの読込 -->
+    <link rel="stylesheet" href="./css/normalize.css">
+  
+    <!-- 自身で作成したCSSファイルの読込 -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="container">
+    <header class="header">
+        <img src="./images/logo.png" class="logo_image">
+           <nav>
+             <ul class="top_menu clearfix">
+               <li><a href="#">お問い合わせ</a></li>
+               <li><a href="#">会社概要</a></li>
+               <li><a href="#">事業内容</a></li>
+               <li><a href="index.html">ホーム</a></li>
+             </ul>
+            </nav>
+    </header>
+
+    <img src="./images/contact.png" class="toiawase_image">
+
+    <div class="wrapper clearfix">
+      <aside class="side_menu">
+        <nav> 
+            <ul>
+              <li class="jigyokai"><a href="#" class="jk">事業内容</a></li>
+              <li class="jigyokai"><a href="#" class="jk">会社概要</a></li>
+              <li class="otoi"><a href="#" class="otoiawase">お問い合わせ</a></li>
+            </ul>
+          </nav> 
+      </aside>
+      <article class="content">
+        <form action="#" method="post">
+          <table>
+            <tr>
+                <th class="contact-item">お名前</th>
+                <td><input type="text" name="名前" class="form-text" ></td>
+            </tr>
+            <tr>
+                <th class="contact-item">メールアドレス</th>
+                <td><input type="email" name="メール" class="form-text" ></td>
+            </tr>
+            <tr>
+                <th class="contact-item">性別</th>
+                <td class="contact-body">
+                  <label class="contact-sex">
+                    <input type="radio" name="性別" />
+                    <span class="contact-sex-txt">男</span>
+                  </label>
+                  <label class="contact-sex">
+                    <input type="radio" name="性別" />
+                    <span class="contact-sex-txt">女</span>
+                  </label>
+                </td>
+            </tr>
+            <tr>
+                <th class="contact-item">お問い合わせ内容</th>
+                <td><textarea class="form-text"></textarea></td>
+            </tr>    
+          </table>
+          <div class="sbotan">
+            <input type="submit" value="送信" class="sousin">
+          </div>
+        </form>
+      </article>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright © 2018 DIVE INC All RIGHTS RESERVED.</p>
+    </footer>
+    </div>
+  </body>
+
+
+
+
+
+
+
+
+
+</html>
